@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body"> 
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a class="header__logo" href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <nav class="header__menu">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Buy Bids</a>
+                        </li>
+                        <li>
+                            <a href="#">Live Auctions</a>
+                        </li>
+                        <li>
+                            <a class="active" href="#">Register</a>
+                        </li>
+                        <li>
+                            <a href="#">Sign In</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form class="header__form" action="#">
+                    <input class="header__form-input" type="search" name="search" id="search" placeholder="Search for auction title" required>
+                    <button class="header__form-btn" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22" fill="none">
+                            <path d="M22.661 19.6277L17.1717 14.4295C18.5831 12.9018 19.3564 10.9797 19.3564 8.97874C19.3564 4.30364 15.1789 0.5 10.0443 0.5C4.90968 0.5 0.732178 4.30364 0.732178 8.97874C0.732178 13.6538 4.90968 17.4575 10.0443 17.4575C11.9719 17.4575 13.8088 16.9281 15.3793 15.9232L20.9103 21.1609C21.1415 21.3795 21.4525 21.5 21.7857 21.5C22.1011 21.5 22.4003 21.3905 22.6274 21.1914C23.11 20.7686 23.1254 20.0675 22.661 19.6277ZM10.0443 2.71185C13.8396 2.71185 16.9272 5.5231 16.9272 8.97874C16.9272 12.4344 13.8396 15.2456 10.0443 15.2456C6.249 15.2456 3.16143 12.4344 3.16143 8.97874C3.16143 5.5231 6.249 2.71185 10.0443 2.71185Z" fill="#6D6D6D"/>
+                        </svg>
+                    </button>
+                </form>
+                <button class="header__burger">
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 18L20 18" stroke="#0F1729" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 12L20 12" stroke="#0F1729" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M4 6L20 6" stroke="#0F1729" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>   
+
+    <main class="main">
+        <section class="userup">
+            <div class="container">
+                <div class="userup__inner">
+                    <div class="userup__content">
+                        <h1 class="userup__title">Sign Up</h1>
+                        <form class="userup__form">
+                            <div class="userup__form-content">
+                                <div class="userup__item">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" placeholder="">
+                                </div>
+                                <div class="userup__item">
+                                    <label for="password">Password</label>
+                                    <span class="userup__item-password">
+                                        <input type="password" name="password" id="password" placeholder="Your Password" required>
+                                        <button type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.311625 13.1561C3.37122 18.4725 8.36368 21.6464 13.6649 21.6464C15.535 21.6464 17.3667 21.2513 19.0886 20.5065L23.2523 24.7614C23.6319 25.1492 24.2528 25.1492 24.6324 24.7614C25.0119 24.3735 25.0119 23.7389 24.6324 23.3511L20.9201 19.5575L18.2529 16.8319L16.8732 15.4222L10.3534 8.75967L8.97382 7.34987L6.28116 4.59827L2.06601 0.290869C1.68648 -0.096965 1.06545 -0.096965 0.685921 0.290869C0.306394 0.678702 0.306394 1.31328 0.685921 1.70111L4.65524 5.7573C2.97942 7.11502 1.49984 8.85599 0.311625 10.9203C-0.103875 11.6411 -0.103875 12.4351 0.311625 13.1561ZM16.6485 18.013C15.7529 18.4822 14.7387 18.7471 13.6649 18.7471C10.0448 18.7471 7.09978 15.7374 7.09978 12.038C7.09978 10.9409 7.35911 9.90452 7.81811 8.98934L9.302 10.5057C9.13986 10.9863 9.05174 11.5019 9.05174 12.0381C9.05174 14.6376 11.1213 16.7526 13.6649 16.7526C14.1897 16.7526 14.6943 16.6625 15.1646 16.4967L16.6485 18.013ZM22.5591 18.412L19.4407 15.2253C19.944 14.2766 20.2301 13.1908 20.2301 12.038C20.2301 8.33895 17.2851 5.32922 13.665 5.32922C12.5369 5.32922 11.4744 5.62161 10.546 6.13592L8.09708 3.63335C9.86081 2.84776 11.7425 2.43003 13.665 2.43003C18.9663 2.43003 23.9582 5.60388 27.0183 10.9203C27.4335 11.6411 27.4335 12.4351 27.0183 13.1561C25.803 15.2678 24.2826 17.041 22.5591 18.412ZM17.9725 13.725L12.0141 7.6362C12.527 7.43462 13.0835 7.32385 13.6649 7.32385C16.2085 7.32385 18.2781 9.4388 18.2781 12.038C18.2781 12.6322 18.1697 13.2009 17.9725 13.725Z" fill="black"/>
+                                            </svg>
+                                            <img src="img/view_show_icon.png" alt="">
+                                        </button>
+                                    </span>
+                                </div>
+                                <div class="userup__item">
+                                    <label for="dateofbirth">Date of Birth</label>
+                                    <div class="userup__item-box userup__item-dateofbirth">
+                                        <select name="mounth" id="dateofbirth">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                        </select>
+                                        <select name="date" id="dateofbirth">
+                                            <option value="01">01</option>
+                                            <option value="02">02</option>
+                                            <option value="03">03</option>
+                                            <option value="04">04</option>
+                                            <option value="05">05</option>
+                                            <option value="06">06</option>
+                                        </select>
+                                        <select name="year" id="dateofbirth">
+                                            <option value="2000">2000</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2005">2005</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="userup__item">
+                                    <label for="gender">Gender</label>
+                                    <div class="userup__item-box userup__item-gender">
+                                        <label>
+                                            <input type="radio" name="Gender" value="Male">
+                                            <span>Male</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="Gender" value="Male">
+                                            <span>Female</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="Gender" value="Male">
+                                            <span>Other</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="userup__form-btn btn" type="submit">Sign Up</button>
+                        </form>
+                        <div class="userup__bottom">
+                            <div class="userup__bottom-buttons">
+                                <button class="userup__buttons-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="33" viewBox="0 0 34 33" fill="none">
+                                        <g clip-path="url(#clip0_16_16489)">
+                                          <path d="M33.8988 16.6944C33.8988 15.3881 33.7865 14.4348 33.5433 13.4463H17.7318V19.3423H27.0128C26.8258 20.8075 25.8153 23.0141 23.5699 24.4969L23.5384 24.6943L28.5377 28.348L28.8841 28.3806C32.065 25.6091 33.8988 21.5312 33.8988 16.6944Z" fill="#4285F4"/>
+                                          <path d="M17.7327 32.2283C22.2796 32.2283 26.0968 30.816 28.885 28.38L23.5708 24.4962C22.1487 25.4318 20.24 26.085 17.7327 26.085C13.2793 26.085 9.49957 23.3136 8.15218 19.4829L7.95469 19.4987L2.75634 23.2941L2.68835 23.4724C5.45768 28.6623 11.1461 32.2283 17.7327 32.2283Z" fill="#34A853"/>
+                                          <path d="M8.15221 19.4832C7.79669 18.4946 7.59094 17.4354 7.59094 16.3409C7.59094 15.2464 7.7967 14.1873 8.13351 13.1987L8.12409 12.9882L2.8606 9.13184L2.68838 9.20911C1.54701 11.3628 0.89209 13.7813 0.89209 16.3409C0.89209 18.9006 1.54701 21.319 2.68838 23.4726L8.15221 19.4832Z" fill="#FBBC05"/>
+                                          <path d="M17.7327 6.59628C20.895 6.59628 23.0281 7.88493 24.2444 8.96183L28.9972 4.5839C26.0782 2.02424 22.2796 0.453125 17.7327 0.453125C11.1461 0.453125 5.45768 4.01898 2.68835 9.20888L8.13348 13.1985C9.49956 9.36782 13.2793 6.59628 17.7327 6.59628Z" fill="#EB4335"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_16_16489">
+                                            <rect width="33.0234" height="31.8847" fill="white" transform="translate(0.89209 0.453125)"/>
+                                          </clipPath>
+                                        </defs>
+                                    </svg>
+                                    Sign up with Google
+                                </button>
+                                <button class="userup__buttons-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 35 34" fill="none">
+                                        <path d="M34.2505 16.7777C34.2505 7.60282 26.603 0.165039 17.1695 0.165039C7.7359 0.165039 0.0883789 7.60269 0.0883789 16.7777C0.0883789 25.0694 6.33472 31.9423 14.5005 33.1885V21.5797H10.1635V16.7777H14.5005V13.1177C14.5005 8.95415 17.0507 6.65434 20.9523 6.65434C22.8212 6.65434 24.7759 6.97881 24.7759 6.97881V11.0671H22.6221C20.5 11.0671 19.8384 12.3477 19.8384 13.6615V16.7777H24.5757L23.8184 21.5797H19.8384V33.1885C28.0042 31.9423 34.2505 25.0696 34.2505 16.7777Z" fill="#1877F2"/>
+                                    </svg>
+                                    Sign up with Facebook
+                                </button>
+                                <button class="userup__buttons-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="37" viewBox="0 0 30 37" fill="none">
+                                        <path d="M21.991 8.74323L21.991 8.74353L22.0011 8.74395C23.1485 8.79069 26.3235 9.20179 28.4219 12.1361C27.6802 12.6117 24.5217 14.8612 24.5622 19.1028C24.6107 24.1712 28.5927 26.1833 29.4061 26.5419C29.2197 27.1241 28.4811 29.2937 26.9593 31.5305C26.199 32.6403 25.4368 33.7302 24.5602 34.5502C23.6868 35.3672 22.7118 35.9048 21.5265 35.9279C20.3737 35.9486 19.6064 35.6161 18.7788 35.2574L18.7252 35.2342C17.872 34.8647 16.955 34.4804 15.5296 34.4804C14.1065 34.4804 13.1701 34.8401 12.3095 35.2046C12.2495 35.23 12.1899 35.2554 12.1306 35.2807C11.3427 35.6166 10.6071 35.9303 9.5669 35.9718C8.43271 36.0154 7.42123 35.4497 6.49151 34.5777C5.56146 33.7054 4.73401 32.5464 3.9676 31.4418C2.41765 29.2049 1.0484 26.0374 0.465315 22.7409C-0.118 19.4431 0.0888426 16.0371 1.66346 13.3063L1.66348 13.3063C3.22852 10.5901 6.02349 8.87477 9.04933 8.83179L9.05037 8.83177C10.1878 8.80838 11.3011 9.19132 12.3275 9.59191C12.4629 9.64476 12.5972 9.69806 12.7299 9.75072C13.0953 9.89578 13.4485 10.036 13.7796 10.1485C14.2307 10.3018 14.6597 10.4108 15.0471 10.4108C15.4379 10.4108 15.8996 10.2792 16.3995 10.1C16.676 10.0009 16.9773 9.88202 17.2921 9.75785C17.5428 9.65897 17.802 9.55671 18.0641 9.45836C19.2669 9.00697 20.6168 8.60261 21.991 8.74323Z" fill="black" stroke="black" stroke-width="0.330101"/>
+                                        <path d="M20.0256 5.85585L20.0255 5.85589C18.8096 7.32852 16.8342 8.47036 14.9141 8.37946C14.7023 6.39509 15.6856 4.32933 16.817 3.02059L16.8178 3.01968C18.0658 1.55466 20.1512 0.456527 21.8985 0.327666C22.0681 2.35385 21.2446 4.38036 20.0256 5.85585Z" fill="black" stroke="black" stroke-width="0.330101"/>
+                                    </svg>
+                                    Sign up with Apple
+                                </button>
+                            </div>
+                            <p class="userup__bottom-other">Already have an account? <a href="login.html">Sign in.</a></p>
+                        </div>
+                    </div>
+                    <div class="userup__block">
+                        <h3 class="userup__block-title">The best way to boost <br>your product.</h3>
+                        <p class="userup__block-name">Enhance and high ight your product <br>using Brar dd tools.</p>
+                        <div class="userup__block-image">
+                            <img src="img/userup.png" alt="">
+                        </div>
+                        <p class="userup__block-descr">Advertise and track with the most efficient ad tracking tools. Get detailed usage statistics of your product.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__image">
+                    <img src="img/footer-icon.png" alt="">
+                </div>
+                <div class="footer__top">
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <g clip-path="url(#clip0_48_10372)">
+                              <path d="M2.80347 5.33332C2.80347 4.62608 3.08442 3.9478 3.58452 3.4477C4.08461 2.94761 4.76289 2.66666 5.47013 2.66666H10.8035C11.5107 2.66666 12.189 2.94761 12.6891 3.4477C13.1892 3.9478 13.4701 4.62608 13.4701 5.33332V10.6667C13.4701 11.3739 13.1892 12.0522 12.6891 12.5523C12.189 13.0524 11.5107 13.3333 10.8035 13.3333H5.47013C4.76289 13.3333 4.08461 13.0524 3.58452 12.5523C3.08442 12.0522 2.80347 11.3739 2.80347 10.6667V5.33332Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M6.13672 8C6.13672 8.53043 6.34743 9.03914 6.7225 9.41421C7.09758 9.78929 7.60629 10 8.13672 10C8.66715 10 9.17586 9.78929 9.55093 9.41421C9.92601 9.03914 10.1367 8.53043 10.1367 8C10.1367 7.46957 9.92601 6.96086 9.55093 6.58579C9.17586 6.21071 8.66715 6 8.13672 6C7.60629 6 7.09758 6.21071 6.7225 6.58579C6.34743 6.96086 6.13672 7.46957 6.13672 8Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M11.1367 5V5.00667" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_48_10372">
+                                <rect width="16" height="16" fill="white" transform="translate(0.136719)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                            <path d="M22.7893 1.37349C21.9686 0.397935 20.4534 0 17.5598 0H7.05585C4.09597 0 2.55513 0.423604 1.73755 1.46223C0.94043 2.47489 0.94043 3.96696 0.94043 6.03203V9.96804C0.94043 13.9687 1.88621 16 7.05585 16H17.5598C20.0692 16 21.4597 15.6489 22.3593 14.7879C23.2818 13.9051 23.6754 12.4636 23.6754 9.96804V6.03203C23.6754 3.85424 23.6137 2.35336 22.7893 1.37349ZM15.5364 8.54344L10.7666 11.0363C10.6599 11.092 10.5433 11.1197 10.4269 11.1197C10.295 11.1197 10.1634 11.0842 10.0469 11.0136C9.82746 10.8807 9.69347 10.6428 9.69347 10.3863V5.41657C9.69347 5.16047 9.82709 4.92286 10.0461 4.78982C10.2651 4.65678 10.5376 4.64769 10.7649 4.76577L15.5347 7.24256C15.7774 7.36855 15.9297 7.61908 15.9301 7.89241C15.9304 8.16596 15.7787 8.41686 15.5364 8.54344Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <g clip-path="url(#clip0_48_10367)">
+                              <path d="M2.68433 2.66666L10.5063 13.3333H13.351L5.52899 2.66666H2.68433Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M2.68433 13.3333L7.19633 8.82132M8.83633 7.18132L13.351 2.66666" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_48_10367">
+                                <rect width="16" height="16" fill="white" transform="translate(0.0175781)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <g clip-path="url(#clip0_48_10365)">
+                              <path d="M12.957 1.33334C13.1203 1.33337 13.2779 1.39331 13.3999 1.50182C13.522 1.61033 13.5999 1.75984 13.619 1.92201L13.6237 2.00001V4.66668C13.6237 4.82997 13.5637 4.98757 13.4552 5.10959C13.3467 5.23161 13.1972 5.30957 13.035 5.32868L12.957 5.33334H10.957V6.00001H12.957C13.0519 6.00005 13.1457 6.02034 13.2322 6.05955C13.3186 6.09875 13.3956 6.15595 13.4582 6.22733C13.5207 6.29871 13.5673 6.38262 13.5948 6.47344C13.6223 6.56427 13.6301 6.65993 13.6177 6.75401L13.6044 6.82868L12.9377 9.49534C12.9046 9.62701 12.8321 9.74544 12.7299 9.8348C12.6277 9.92415 12.5006 9.98016 12.3657 9.99534L12.2904 10H10.957V14C10.957 14.1633 10.8971 14.3209 10.7886 14.4429C10.68 14.5649 10.5305 14.6429 10.3684 14.662L10.2904 14.6667H7.6237C7.46041 14.6667 7.30281 14.6067 7.18078 14.4982C7.05876 14.3897 6.9808 14.2402 6.9617 14.078L6.95703 14V10H5.6237C5.46041 9.99999 5.30281 9.94004 5.18078 9.83153C5.05876 9.72303 4.9808 9.57351 4.9617 9.41134L4.95703 9.33334V6.66668C4.95705 6.50339 5.017 6.34579 5.12551 6.22376C5.23401 6.10174 5.38353 6.02378 5.5457 6.00468L5.6237 6.00001H6.95703V5.33334C6.95699 4.29842 7.35808 3.30377 8.07601 2.55836C8.79394 1.81295 9.77284 1.37482 10.807 1.33601L10.957 1.33334H12.957Z" fill="black"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_48_10365">
+                                <rect width="16" height="16" fill="white" transform="translate(0.957031)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__block">
+                        <a class="footer__logo" href="index.html">
+                            <img src="img/footer-logo.png" alt="">
+                        </a>
+                        <div class="footer__block-content">
+                            <h3 class="footer__block-title">Subscribe newsletter</h3>
+                            <p class="footer__block-descr">Subscribe our newsletter to get the latest news and updates!</p>
+                            <form class="footer__form" action="#">
+                                <label for="email">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M3.46191 5.83334C3.46191 5.39131 3.63751 4.96739 3.95007 4.65483C4.26263 4.34227 4.68655 4.16667 5.12858 4.16667H16.7952C17.2373 4.16667 17.6612 4.34227 17.9738 4.65483C18.2863 4.96739 18.4619 5.39131 18.4619 5.83334V14.1667C18.4619 14.6087 18.2863 15.0326 17.9738 15.3452C17.6612 15.6577 17.2373 15.8333 16.7952 15.8333H5.12858C4.68655 15.8333 4.26263 15.6577 3.95007 15.3452C3.63751 15.0326 3.46191 14.6087 3.46191 14.1667V5.83334Z" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.46191 5.83333L10.9619 10.8333L18.4619 5.83333" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <input type="email" id="email" placeholder="enter your email" required>
+                                </label>
+    
+                                <button class="footer__form-btn" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Buy Bids</a>
+                            </li>
+                            <li>
+                                <a href="#">Live Auctions</a>
+                            </li>
+                            <li>
+                                <a href="#">Register</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Featured</a>
+                            </li>
+                            <li>
+                                <a href="#">Gift Cards</a>
+                            </li>
+                            <li>
+                                <a href="#">Cars</a>
+                            </li>
+                            <li>
+                                <a href="#">Phones</a>
+                            </li>
+                            <li>
+                                <a href="#">Gaming</a>
+                            </li>
+                            <li>
+                                <a href="#">Ended Auction</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer__copy">© 2025 Copyrights Reserved</p>
+                <div class="footer__links">
+                    <a href="#">Privacy policy</a>
+                    <span></span>
+                    <a href="#">Terms and conditions</a>
+                    <span></span>
+                    <a href="#">Copyright</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/userup.js"></script>
+</body>
+</html>
