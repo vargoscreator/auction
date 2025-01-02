@@ -148,9 +148,11 @@ input:not([type="search"])::placeholder {
 input{
     background-color: transparent;
     border: none;
-    outline: none;
     color: #000;
     width: 100%;
+}
+input[type="search"]{
+    outline: none;
 }
 input:not([type="search"]){
     padding: 5px 25px;
@@ -722,7 +724,6 @@ button{
     margin-top: 13px;
 }
 .userup__title{
-    color: #000;
     font-family: 'THICCCBOI', sans-serif;
     font-size: 42px;
     font-style: normal;
@@ -933,3 +934,219 @@ button{
 
 }
 /* userup END */
+
+
+/* account page */
+.account__bottom{
+    display: flex;
+    align-items: start;
+    gap: 34px;
+}
+.account__select{
+    width: 100%;
+    max-width: 334px;
+    border-radius: 28px;
+    background: #F1F1F1;
+    padding: 30px;
+    font-family: 'THICCCBOI', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.account__title{
+    margin-bottom: 36px;
+}
+.account__select-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.account__select-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 24px;
+    transition: all .2s ease;
+    justify-content: start;
+    border-radius: 30px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    height: 41px;
+}
+.account__select-btn.active{
+    background-color: #fff;
+}
+.account__select-btn:hover{
+    background-color: #fff;
+}
+.account__select-image{
+    border-radius: 21px;
+    background: #01DE8E;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.01);
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+    min-height: 257px;
+    padding: 30px 36px;
+}
+.account__select-image img{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+}
+.account__select-title{
+    color:  #FFFEFD;
+    font-family: 'THICCCBOI', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 121%; /* 26.62px */
+    letter-spacing: -0.22px;
+}
+.account__select-icon{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.account__select-image button{
+    margin-top: 76px;
+    display: flex;
+}
+.account__select-image button span{
+    color: #01DE8E;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 121%; /* 15.73px */
+    letter-spacing: -0.13px;
+    padding: 8px 10px;
+    background-color: #fff;
+    border-radius: 30px;
+    width: 143px;
+}
+
+.account__content{
+    padding: 26px 30px 37px;
+    border-radius: 30px;
+    height: max-content;
+    background: #F1F1F1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+.account__content-result{
+    border-radius: 35px;
+    background: #FFF;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.01);
+    padding: 34px 40px;
+    display: none;
+    width: 100%;
+}
+.account__content-result.active{
+    display: block;
+}
+.account__name{
+    font-family: 'THICCCBOI', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 44px;
+}
+.account__block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.account__item{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+.account__item-box{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.account__item-image label,
+.account__item label{
+    width: 100%;
+    max-width: 177px;
+    min-width: 177px;
+}
+.account__item-box,
+.account__item input{
+    width: 100%;
+}
+.account__item:not(:first-of-type){
+    margin-top: 18px;
+}
+.account__item-box select{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M13 5.5L8 10.5L3 5.5' stroke='%238C8888' stroke-width='2' stroke-linecap='square' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-size: 16px;
+}
+.account__item-image{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.account__item-image--edit{
+    color: #000;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 7px;
+}
+.account__item-image--edit::before{
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cg clip-path='url(%23clip0_48_10985)'%3E%3Cpath d='M14.7674 10.0511C14.5473 10.0511 14.3689 10.2295 14.3689 10.4496V13.9877C14.3681 14.6477 13.8334 15.1825 13.1734 15.1831H1.99241C1.33243 15.1825 0.797744 14.6477 0.796966 13.9877V3.60362C0.797744 2.94379 1.33243 2.40895 1.99241 2.40817H5.53051C5.75061 2.40817 5.92899 2.22979 5.92899 2.00969C5.92899 1.78975 5.75061 1.61121 5.53051 1.61121H1.99241C0.892539 1.61245 0.00124526 2.50375 0 3.60362V13.9878C0.00124526 15.0877 0.892539 15.979 1.99241 15.9802H13.1734C14.2733 15.979 15.1646 15.0877 15.1659 13.9878V10.4496C15.1659 10.2295 14.9875 10.0511 14.7674 10.0511Z' fill='black'/%3E%3Cpath d='M15.0084 0.585774C14.3081 -0.114529 13.1727 -0.114529 12.4724 0.585774L5.36321 7.69496C5.31449 7.74368 5.27931 7.80407 5.26094 7.87038L4.32606 11.2455C4.28762 11.3839 4.32669 11.5321 4.42818 11.6337C4.52982 11.7352 4.67801 11.7743 4.81639 11.736L8.1915 10.8009C8.25781 10.7826 8.31821 10.7474 8.36693 10.6987L15.476 3.58934C16.1752 2.88857 16.1752 1.75414 15.476 1.05337L15.0084 0.585774ZM6.23147 7.95397L12.0498 2.1355L13.9262 4.01195L8.10776 9.83042L6.23147 7.95397ZM5.85664 8.70611L7.35578 10.2054L5.28211 10.7799L5.85664 8.70611ZM14.9125 3.02586L14.4899 3.44847L12.6133 1.57186L13.036 1.14925C13.425 0.760266 14.0557 0.760266 14.4447 1.14925L14.9125 1.61685C15.3008 2.0063 15.3008 2.63656 14.9125 3.02586Z' fill='black'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_48_10985'%3E%3Crect width='16' height='16' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;   
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.account__item-image--edit:hover{
+    text-decoration: underline;
+}
+.account__item-image--content label{
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+}
+.fileImage__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    border-radius: 19px;
+    overflow: hidden;
+    background-color: #F5F5F5;
+}
+.fileImage__content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.account__item-image--content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
