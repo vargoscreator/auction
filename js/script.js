@@ -36,11 +36,17 @@ document.addEventListener("scroll", updateHeaderClass);
   
 
 document.addEventListener('DOMContentLoaded', () => {
-  const headerBurger = document.querySelector('.header__burger');
+  const headerBurger = document.querySelectorAll('.header__burger, .header__menu-bg, .header__menu-close');
   const headerMenu = document.querySelector('.header__menu');
+  const headerMenuBg = document.querySelector('.header__menu-bg');
 
-  headerBurger.addEventListener('click', () => {
-    headerMenu.classList.toggle('active');
+  headerBurger.forEach(element => {
+    element.addEventListener('click', () => {
+      headerMenu.classList.toggle('active');
+      headerMenuBg.classList.toggle('active');
+    });
   });
+
+
 
 });

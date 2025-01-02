@@ -15,18 +15,23 @@
                     <img src="img/logo.png" alt="">
                 </a>
                 <nav class="header__menu">
+                    <button class="header__menu-close">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+                        </svg>
+                    </button>
                     <ul>
                         <li>
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">Buy Bids</a>
+                            <a class="active" href="#">Buy Bids</a>
                         </li>
                         <li>
                             <a href="#">Live Auctions</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Register</a>
+                            <a href="#">Register</a>
                         </li>
                         <li>
                             <a href="#">Sign In</a>
@@ -50,13 +55,11 @@
                         <path d="M4 12L20 12" stroke="#0F1729" stroke-width="2" stroke-linecap="round"/>
                         <path d="M4 6L20 6" stroke="#0F1729" stroke-width="2" stroke-linecap="round"/>
                     </svg>
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
-                    </svg>
                 </button>
             </div>
         </div>
     </header>   
+    <span class="header__menu-bg"></span>
 
     <main class="main">
         <section class="account">
@@ -67,6 +70,7 @@
 
                         <div class="account__top-content">
                             <div class="account__top-box">
+
                                 <div class="account__top-btns">
                                     <button class="account__top-btn">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -137,7 +141,7 @@
                                     </svg>
                                     View Profile
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="edit-profile">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                         <g clip-path="url(#clip0_48_11230)">
                                           <path d="M14.6517 3.58916L11.395 0.508173C11.0486 0.180458 10.5952 0 10.1184 0H3.91815C2.89387 0 2.06055 0.833321 2.06055 1.8576V15.435C2.06055 16.4593 2.89387 17.2926 3.91815 17.2926H13.375C14.3993 17.2926 15.2326 16.4593 15.2326 15.435V4.93859C15.2326 4.43032 15.0209 3.93846 14.6517 3.58916ZM13.6676 4.05295H11.1459C11.0528 4.05295 10.977 3.9772 10.977 3.88408V1.50756L13.6676 4.05295ZM13.375 16.2794H3.91815C3.45257 16.2794 3.07379 15.9006 3.07379 15.435V1.8576C3.07379 1.39202 3.45257 1.01324 3.91815 1.01324H9.96381V3.88408C9.96381 4.5359 10.4941 5.06619 11.1459 5.06619H14.2194V15.435C14.2194 15.9006 13.8406 16.2794 13.375 16.2794Z" fill="black"/>
@@ -153,13 +157,13 @@
                                     </svg>
                                     Edit Profile
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="notifications">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="20" viewBox="0 0 17 20" fill="none">
                                         <path d="M14.2844 9.88112V8.08196C14.2844 5.45731 12.5398 3.23275 10.1495 2.50616V1.69157C10.1495 0.75884 9.39064 0 8.45791 0C7.52518 0 6.76634 0.75884 6.76634 1.69157V2.50616C4.37596 3.23275 2.63138 5.45728 2.63138 8.08196V9.88112C2.63138 12.1866 1.75259 14.3727 0.156909 16.0368C0.00053261 16.1999 -0.0434107 16.4405 0.0452277 16.6483C0.133866 16.8561 0.337983 16.9909 0.563902 16.9909H5.69534C5.95728 18.2762 7.09642 19.2463 8.45791 19.2463C9.81944 19.2463 10.9585 18.2762 11.2205 16.9909H16.3519C16.5778 16.9909 16.7819 16.8561 16.8706 16.6483C16.9592 16.4405 16.9152 16.1999 16.7589 16.0368C15.1632 14.3727 14.2844 12.1866 14.2844 9.88112ZM7.89405 1.69157C7.89405 1.38066 8.147 1.12772 8.45791 1.12772C8.76882 1.12772 9.02177 1.38066 9.02177 1.69157V2.2828C8.83618 2.2649 8.64812 2.25543 8.45791 2.25543C8.2677 2.25543 8.07964 2.2649 7.89405 2.2828V1.69157ZM8.45791 18.1186C7.72283 18.1186 7.09608 17.6472 6.86332 16.9909H10.0525C9.81974 17.6472 9.19299 18.1186 8.45791 18.1186ZM1.7792 15.8632C3.06333 14.1418 3.75909 12.0587 3.75909 9.88112V8.08196C3.75909 5.49103 5.86698 3.38315 8.45791 3.38315C11.0488 3.38315 13.1567 5.49103 13.1567 8.08196V9.88112C13.1567 12.0587 13.8525 14.1418 15.1367 15.8632H1.7792Z" fill="black"/>
                                     </svg>
                                     Notifications
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="wallet">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                                         <path d="M16.2273 8.5713V6.18198C16.2273 5.37179 15.5988 4.71289 14.8048 4.649L12.5859 0.773352C12.3803 0.414909 12.0482 0.158718 11.6509 0.052337C11.2555 -0.0533197 10.842 0.00217091 10.4881 0.20816L2.88142 4.63654H1.54546C0.693135 4.63654 0 5.32963 0 6.18198V15.4546C0 16.3069 0.693099 17 1.54546 17H14.6818C15.5342 17 16.2273 16.3069 16.2273 15.4546V13.0652C16.676 12.9052 17 12.4804 17 11.9773V9.6592C17 9.15616 16.676 8.73133 16.2273 8.5713ZM13.9069 4.63654H10.5394L13.0651 3.16611L13.9069 4.63654ZM12.6812 2.49555L9.00362 4.63654H7.47823L12.2997 1.82941L12.6812 2.49555ZM10.877 0.875966C11.0517 0.773715 11.2558 0.746549 11.4509 0.798635C11.6483 0.851445 11.8128 0.978979 11.915 1.15744L11.9158 1.15885L5.94254 4.63654H4.41722L10.877 0.875966ZM15.4545 15.4546C15.4545 15.8805 15.1078 16.2273 14.6818 16.2273H1.54546C1.1195 16.2273 0.77275 15.8805 0.77275 15.4546V6.18198C0.77275 5.75602 1.1195 5.40928 1.54546 5.40928H14.6818C15.1078 5.40928 15.4545 5.75602 15.4545 6.18198V8.50013H13.1364C11.858 8.50013 10.8182 9.53996 10.8182 10.8183C10.8182 12.0966 11.858 13.1364 13.1364 13.1364H15.4545V15.4546ZM16.2273 11.9773C16.2273 12.1905 16.0541 12.3637 15.8409 12.3637H13.1364C12.284 12.3637 11.5909 11.6706 11.5909 10.8183C11.5909 9.96595 12.284 9.27283 13.1364 9.27283H15.8409C16.0541 9.27283 16.2273 9.446 16.2273 9.6592V11.9773Z" fill="black"/>
                                         <path d="M13.1365 10.0455C12.7105 10.0455 12.3638 10.3923 12.3638 10.8182C12.3638 11.2442 12.7105 11.5909 13.1365 11.5909C13.5624 11.5909 13.9092 11.2442 13.9092 10.8182C13.9092 10.3923 13.5625 10.0455 13.1365 10.0455Z" fill="black"/>
@@ -389,7 +393,7 @@
 
 
 
-                            <div class="account__content-result active" data-account="edit-profile">
+                            <div class="account__content-result" data-account="edit-profile">
                                 <div class="account__item-image">
                                     <label for="fileImage">Username</label>
                                     <div class="account__item-image--content">
@@ -509,6 +513,38 @@
                                     </div>
                                 </div>
                             </div>
+
+
+                            <div class="account__content-result account__content-notifications" data-account="notifications">
+                                <form>
+                                    <label>
+                                        <input type="checkbox" name="Subscribe to Newsletter">
+                                        <span>Subscribe to Newsletter</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Notify me when I win an auction">
+                                        <span>Notify me when I win an auction</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="Notify me when new auctions are added">
+                                        <span>Notify me when new auctions are added</span>
+                                    </label>
+                                    <button class="btn" type="submit">Submit</button>
+                                </form>
+                            </div>
+
+                            <div class="account__content-result account__content-wallet" data-account="wallet">
+                                <form>
+                                    <h3>Withdraw Security Code</h3>
+                                    <input type="text">
+                                    <button class="btn" type="submit">Submit</button>
+                                </form>
+                                <div class="account__content-wallet--content">
+                                    <h3>Affiliate <br>Balance</h3>
+                                    <p>0.00 USD</p>
+                                    <button>Withdraw</button>
+                                </div>
+                            </div>
                             
                         </div>
                     </div>
@@ -521,6 +557,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
+                <div class="footer__image">
+                    <img src="img/footer-icon.png" alt="">
+                </div>
                 <div class="footer__top">
                     <a href="#" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">

@@ -15,18 +15,23 @@
                     <img src="img/logo.png" alt="">
                 </a>
                 <nav class="header__menu">
+                    <button class="header__menu-close">
+                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
+                        </svg>
+                    </button>
                     <ul>
                         <li>
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">Buy Bids</a>
+                            <a class="active" href="#">Buy Bids</a>
                         </li>
                         <li>
                             <a href="#">Live Auctions</a>
                         </li>
                         <li>
-                            <a class="active" href="#">Register</a>
+                            <a href="#">Register</a>
                         </li>
                         <li>
                             <a href="#">Sign In</a>
@@ -50,13 +55,11 @@
                         <path d="M4 12L20 12" stroke="#0F1729" stroke-width="2" stroke-linecap="round"/>
                         <path d="M4 6L20 6" stroke="#0F1729" stroke-width="2" stroke-linecap="round"/>
                     </svg>
-                    <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#0F1729"/>
-                    </svg>
                 </button>
             </div>
         </div>
     </header>   
+    <span class="header__menu-bg"></span>
 
     <main class="main">
         <section class="hero">
@@ -253,7 +256,127 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
-                
+                <div class="footer__image">
+                    <img src="img/footer-icon.png" alt="">
+                </div>
+                <div class="footer__top">
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <g clip-path="url(#clip0_48_10372)">
+                              <path d="M2.80347 5.33332C2.80347 4.62608 3.08442 3.9478 3.58452 3.4477C4.08461 2.94761 4.76289 2.66666 5.47013 2.66666H10.8035C11.5107 2.66666 12.189 2.94761 12.6891 3.4477C13.1892 3.9478 13.4701 4.62608 13.4701 5.33332V10.6667C13.4701 11.3739 13.1892 12.0522 12.6891 12.5523C12.189 13.0524 11.5107 13.3333 10.8035 13.3333H5.47013C4.76289 13.3333 4.08461 13.0524 3.58452 12.5523C3.08442 12.0522 2.80347 11.3739 2.80347 10.6667V5.33332Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M6.13672 8C6.13672 8.53043 6.34743 9.03914 6.7225 9.41421C7.09758 9.78929 7.60629 10 8.13672 10C8.66715 10 9.17586 9.78929 9.55093 9.41421C9.92601 9.03914 10.1367 8.53043 10.1367 8C10.1367 7.46957 9.92601 6.96086 9.55093 6.58579C9.17586 6.21071 8.66715 6 8.13672 6C7.60629 6 7.09758 6.21071 6.7225 6.58579C6.34743 6.96086 6.13672 7.46957 6.13672 8Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M11.1367 5V5.00667" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_48_10372">
+                                <rect width="16" height="16" fill="white" transform="translate(0.136719)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 24 16" fill="none">
+                            <path d="M22.7893 1.37349C21.9686 0.397935 20.4534 0 17.5598 0H7.05585C4.09597 0 2.55513 0.423604 1.73755 1.46223C0.94043 2.47489 0.94043 3.96696 0.94043 6.03203V9.96804C0.94043 13.9687 1.88621 16 7.05585 16H17.5598C20.0692 16 21.4597 15.6489 22.3593 14.7879C23.2818 13.9051 23.6754 12.4636 23.6754 9.96804V6.03203C23.6754 3.85424 23.6137 2.35336 22.7893 1.37349ZM15.5364 8.54344L10.7666 11.0363C10.6599 11.092 10.5433 11.1197 10.4269 11.1197C10.295 11.1197 10.1634 11.0842 10.0469 11.0136C9.82746 10.8807 9.69347 10.6428 9.69347 10.3863V5.41657C9.69347 5.16047 9.82709 4.92286 10.0461 4.78982C10.2651 4.65678 10.5376 4.64769 10.7649 4.76577L15.5347 7.24256C15.7774 7.36855 15.9297 7.61908 15.9301 7.89241C15.9304 8.16596 15.7787 8.41686 15.5364 8.54344Z" fill="black"/>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <g clip-path="url(#clip0_48_10367)">
+                              <path d="M2.68433 2.66666L10.5063 13.3333H13.351L5.52899 2.66666H2.68433Z" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M2.68433 13.3333L7.19633 8.82132M8.83633 7.18132L13.351 2.66666" stroke="black" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_48_10367">
+                                <rect width="16" height="16" fill="white" transform="translate(0.0175781)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                            <g clip-path="url(#clip0_48_10365)">
+                              <path d="M12.957 1.33334C13.1203 1.33337 13.2779 1.39331 13.3999 1.50182C13.522 1.61033 13.5999 1.75984 13.619 1.92201L13.6237 2.00001V4.66668C13.6237 4.82997 13.5637 4.98757 13.4552 5.10959C13.3467 5.23161 13.1972 5.30957 13.035 5.32868L12.957 5.33334H10.957V6.00001H12.957C13.0519 6.00005 13.1457 6.02034 13.2322 6.05955C13.3186 6.09875 13.3956 6.15595 13.4582 6.22733C13.5207 6.29871 13.5673 6.38262 13.5948 6.47344C13.6223 6.56427 13.6301 6.65993 13.6177 6.75401L13.6044 6.82868L12.9377 9.49534C12.9046 9.62701 12.8321 9.74544 12.7299 9.8348C12.6277 9.92415 12.5006 9.98016 12.3657 9.99534L12.2904 10H10.957V14C10.957 14.1633 10.8971 14.3209 10.7886 14.4429C10.68 14.5649 10.5305 14.6429 10.3684 14.662L10.2904 14.6667H7.6237C7.46041 14.6667 7.30281 14.6067 7.18078 14.4982C7.05876 14.3897 6.9808 14.2402 6.9617 14.078L6.95703 14V10H5.6237C5.46041 9.99999 5.30281 9.94004 5.18078 9.83153C5.05876 9.72303 4.9808 9.57351 4.9617 9.41134L4.95703 9.33334V6.66668C4.95705 6.50339 5.017 6.34579 5.12551 6.22376C5.23401 6.10174 5.38353 6.02378 5.5457 6.00468L5.6237 6.00001H6.95703V5.33334C6.95699 4.29842 7.35808 3.30377 8.07601 2.55836C8.79394 1.81295 9.77284 1.37482 10.807 1.33601L10.957 1.33334H12.957Z" fill="black"/>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_48_10365">
+                                <rect width="16" height="16" fill="white" transform="translate(0.957031)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__content">
+                    <div class="footer__block">
+                        <a class="footer__logo" href="index.html">
+                            <img src="img/footer-logo.png" alt="">
+                        </a>
+                        <div class="footer__block-content">
+                            <h3 class="footer__block-title">Subscribe newsletter</h3>
+                            <p class="footer__block-descr">Subscribe our newsletter to get the latest news and updates!</p>
+                            <form class="footer__form" action="#">
+                                <label for="email">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                                        <path d="M3.46191 5.83334C3.46191 5.39131 3.63751 4.96739 3.95007 4.65483C4.26263 4.34227 4.68655 4.16667 5.12858 4.16667H16.7952C17.2373 4.16667 17.6612 4.34227 17.9738 4.65483C18.2863 4.96739 18.4619 5.39131 18.4619 5.83334V14.1667C18.4619 14.6087 18.2863 15.0326 17.9738 15.3452C17.6612 15.6577 17.2373 15.8333 16.7952 15.8333H5.12858C4.68655 15.8333 4.26263 15.6577 3.95007 15.3452C3.63751 15.0326 3.46191 14.6087 3.46191 14.1667V5.83334Z" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.46191 5.83333L10.9619 10.8333L18.4619 5.83333" stroke="#B3B3B3" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <input type="email" id="email" placeholder="enter your email" required>
+                                </label>
+    
+                                <button class="footer__form-btn" type="submit">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <ul>
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Buy Bids</a>
+                            </li>
+                            <li>
+                                <a href="#">Live Auctions</a>
+                            </li>
+                            <li>
+                                <a href="#">Register</a>
+                            </li>
+                            <li>
+                                <a href="#">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="#">Featured</a>
+                            </li>
+                            <li>
+                                <a href="#">Gift Cards</a>
+                            </li>
+                            <li>
+                                <a href="#">Cars</a>
+                            </li>
+                            <li>
+                                <a href="#">Phones</a>
+                            </li>
+                            <li>
+                                <a href="#">Gaming</a>
+                            </li>
+                            <li>
+                                <a href="#">Ended Auction</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer__copy">© 2025 Copyrights Reserved</p>
+                <div class="footer__links">
+                    <a href="#">Privacy policy</a>
+                    <span></span>
+                    <a href="#">Terms and conditions</a>
+                    <span></span>
+                    <a href="#">Copyright</a>
+                </div>
             </div>
         </div>
     </footer>
