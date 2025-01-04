@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Sign In</title>
+    <title>Account</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -170,7 +170,7 @@
                                     </svg>
                                     My Wallet
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="my-bits">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                                         <path d="M12.2471 13.0618V10.3672M10.3936 10.3672V12.8099" stroke="black" stroke-width="0.8" stroke-miterlimit="22.926" stroke-linecap="round" stroke-linejoin="round"/>
                                         <mask id="mask0_48_11251" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
@@ -185,33 +185,33 @@
                                       </svg>
                                       My Bids
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="auction-won">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                                         <path d="M15.1637 1.62528H13.43C13.4661 1.26411 13.4661 0.902935 13.5023 0.541761C13.5023 0.397291 13.43 0.252822 13.3578 0.14447C13.2494 0.0361174 13.105 0 12.9605 0H4.00339C3.85892 0 3.71445 0.0722348 3.6061 0.14447C3.49774 0.252822 3.46163 0.397291 3.46163 0.541761C3.46163 0.902935 3.46163 1.26411 3.49774 1.58916H1.80023C1.3307 1.62528 0.897291 1.80587 0.572235 2.20316C0.102709 2.7088 -0.0778781 3.46727 0.030474 4.22573C0.391648 6.57336 1.80023 10.5463 7.25395 10.5463H7.29007C7.50677 10.6546 7.72348 10.7269 7.94018 10.763V11.702L5.23138 12.6772C5.01467 12.7494 4.8702 12.9661 4.8702 13.1828V16.4334C4.8702 16.7223 5.12302 16.9752 5.41196 16.9752H11.588C11.877 16.9752 12.1298 16.7223 12.1298 16.4334V13.1828C12.1298 12.9661 11.9853 12.7494 11.7686 12.6772L9.05982 11.702V10.763C9.27652 10.7269 9.49323 10.6546 9.70993 10.5463H9.74605C15.2359 10.5463 16.6445 6.57336 16.9695 4.22573C17.0779 3.46727 16.8973 2.74492 16.4278 2.20316C16.0666 1.80587 15.6332 1.62528 15.1637 1.62528ZM12.3826 1.08352C12.202 6.28442 10.2517 9.75169 8.48194 9.75169C6.71219 9.75169 4.76185 6.28442 4.58126 1.08352H12.3826ZM1.114 4.04515C1.04176 3.61174 1.15011 3.17833 1.40293 2.88939C1.47517 2.81716 1.61964 2.7088 1.80023 2.7088H3.6061C3.89503 5.56208 4.72573 7.94582 5.88149 9.3544C2.55869 8.81264 1.43905 6.24831 1.114 4.04515ZM11.0102 15.8916H5.95372V13.5801L8.48194 12.6772L11.0102 13.5801V15.8916ZM15.8499 4.04515C15.5248 6.24831 14.4052 8.77652 11.0463 9.3544C12.202 7.94582 13.0327 5.56208 13.3217 2.7088H15.1275C15.3081 2.7088 15.4526 2.81716 15.5248 2.92551C15.8138 3.17833 15.9221 3.61174 15.8499 4.04515Z" fill="black"/>
                                       </svg>
                                       Auction Won
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="watched-auctions">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" fill="none">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14 2.52181C14 1.85432 13.7399 1.21484 13.2774 0.743355C12.8105 0.266452 12.1764 0 11.5161 0H2.48387C1.82361 0 1.18955 0.266452 0.722581 0.743355C0.260129 1.21484 0 1.85432 0 2.52181V17.8197C0 18.4448 0.359484 19.0102 0.914968 19.2703C1.47948 19.5359 2.14335 19.4419 2.61484 19.0301L6.85819 15.316C6.93948 15.2446 7.06052 15.2446 7.14181 15.316L11.3852 19.0301C11.8566 19.4419 12.5205 19.5359 13.085 19.2703C13.6405 19.0102 14 18.4448 14 17.8197V2.52181ZM12.6452 2.52181V17.8197C12.6452 17.9155 12.5937 18.004 12.5088 18.0446C12.432 18.0808 12.3417 18.0663 12.2775 18.0103L8.03419 14.2972C7.43897 13.776 6.56103 13.776 5.96581 14.2972L1.72245 18.0103C1.65832 18.0663 1.568 18.0808 1.49123 18.0446C1.40632 18.004 1.35484 17.9155 1.35484 17.8197V2.52181C1.35484 2.21019 1.47497 1.91123 1.69084 1.69174C1.90129 1.47677 2.18581 1.35484 2.48387 1.35484H11.5161C11.8142 1.35484 12.0987 1.47677 12.3092 1.69174C12.525 1.91123 12.6452 2.21019 12.6452 2.52181Z" fill="black"/>
                                       </svg>
                                       Watched Auctions
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="buy-bids">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                                         <path d="M5.58594 10C5.86206 10 6.08594 10.1919 6.08594 10.4286C6.08594 11.3738 6.98315 12.1429 8.08594 12.1429C9.18872 12.1429 10.0859 11.3738 10.0859 10.4286C10.0859 10.1919 10.3098 10 10.5859 10C10.8621 10 11.0859 10.1919 11.0859 10.4286C11.0859 11.8465 9.74023 13 8.08594 13C6.43164 13 5.08594 11.8465 5.08594 10.4286C5.08594 10.1919 5.30981 10 5.58594 10Z" fill="black"/>
                                         <path d="M16.9607 14.1806L15.478 4.80737C15.3302 3.87089 14.5349 3.1912 13.5866 3.1912H12.2718C11.9665 1.38298 10.3938 0 8.5 0C6.6062 0 5.0335 1.38298 4.72821 3.1912H3.4134C2.46507 3.1912 1.66976 3.87089 1.52205 4.80706L0.0392585 14.1806C-0.106589 15.104 0.157994 16.0414 0.765382 16.7523C1.37246 17.4631 2.2569 17.8707 3.19182 17.8707H13.8082C14.7431 17.8707 15.6275 17.4631 16.2346 16.7523C16.842 16.0414 17.1066 15.104 16.9607 14.1806ZM8.5 1.27648C9.68603 1.27648 10.6769 2.09325 10.9623 3.1912H6.03769C6.32315 2.09325 7.31397 1.27648 8.5 1.27648ZM15.2642 15.923C14.8999 16.3496 14.3691 16.5943 13.8082 16.5943H3.19182C2.63087 16.5943 2.10014 16.3496 1.73583 15.923C1.37121 15.4964 1.21259 14.9341 1.30016 14.3801L2.78295 5.0062C2.83219 4.69425 3.09739 4.46769 3.4134 4.46769H13.5866C13.9026 4.46769 14.1678 4.69425 14.2171 5.00651L15.6998 14.3801C15.7874 14.9341 15.6288 15.4964 15.2642 15.923Z" fill="black"/>
                                       </svg>
                                       Buy Bids
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="buy-membership">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14" fill="none">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M4.57427 3.97L7.73383 0.34869C7.92676 0.127299 8.20666 0 8.5 0C8.79334 0 9.07324 0.127299 9.26617 0.34869L12.4257 3.97L15.4406 2.06605C15.7782 1.85335 16.2091 1.85731 16.5428 2.07712C16.8765 2.29693 17.0504 2.69227 16.9872 3.08681L15.5544 12.0389C15.443 12.7379 14.8397 13.2518 14.1328 13.2518H2.8672C2.16033 13.2518 1.55704 12.7379 1.44555 12.0389L0.0128408 3.08681C-0.0504136 2.69227 0.123536 2.29693 0.457203 2.07712C0.79087 1.85731 1.22179 1.85335 1.55941 2.06605L4.57427 3.97ZM1.24314 3.26946L2.61655 11.8515C2.63632 11.9748 2.74227 12.0658 2.8672 12.0658H14.1328C14.2577 12.0658 14.3637 11.9748 14.3834 11.8515L15.7569 3.26946L12.9365 5.05007C12.5127 5.31811 11.9569 5.23667 11.6271 4.85952L8.5 1.27458L5.37286 4.85952C5.04315 5.23667 4.4873 5.31811 4.06349 5.05007L1.24314 3.26946Z" fill="black"/>
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.8546 9.09998C15.182 9.09998 15.4477 9.36564 15.4477 9.69299C15.4477 10.0203 15.182 10.286 14.8546 10.286H2.14526C1.81791 10.286 1.55225 10.0203 1.55225 9.69299C1.55225 9.36564 1.81791 9.09998 2.14526 9.09998H14.8546Z" fill="black"/>
                                       </svg>
                                       Buy Membership
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="buy-membership-list">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
                                         <g clip-path="url(#clip0_48_11237)">
                                           <path d="M12.9695 1.44105C14.5589 1.44105 15.8516 2.73367 15.8516 4.32315V12.9695C15.8516 14.5589 14.5589 15.8516 12.9695 15.8516H4.32315C2.73367 15.8516 1.44105 14.5589 1.44105 12.9695V4.32315C1.44105 2.73367 2.73367 1.44105 4.32315 1.44105H12.9695ZM12.9695 0H4.32315C1.93533 0 0 1.93533 0 4.32315V12.9695C0 15.3573 1.93533 17.2926 4.32315 17.2926H12.9695C15.3573 17.2926 17.2926 15.3573 17.2926 12.9695V4.32315C17.2926 1.93533 15.3573 0 12.9695 0Z" fill="black"/>
@@ -227,7 +227,7 @@
                                       </svg>
                                       Buy Membership List
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="buy-bid-list">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="22" viewBox="0 0 17 22" fill="none">
                                         <path d="M14.8364 2.83498H12.8788V1.95923C12.8788 1.6759 12.5697 1.54712 12.2864 1.54712H10.7667C10.4061 0.516819 9.50459 0.00166776 8.47429 0.00166776C7.45533 -0.0366395 6.52851 0.588159 6.18187 1.54712H4.68793C4.4046 1.54712 4.12126 1.6759 4.12126 1.95923V2.83498H2.16365C1.00358 2.84735 0.0545275 3.76249 0 4.92132V19.6804C0 20.8137 1.0303 21.6379 2.16365 21.6379H14.8364C15.9697 21.6379 17 20.8137 17 19.6804V4.92137C16.9455 3.76249 15.9964 2.84735 14.8364 2.83498ZM5.15151 2.57743H6.56819C6.81549 2.54725 7.01413 2.35912 7.05761 2.11379C7.21015 1.44951 7.79294 0.972661 8.47429 0.954715C9.14933 0.975175 9.72334 1.4535 9.86518 2.11379C9.91138 2.3676 10.1231 2.55815 10.3803 2.57743H11.8485V4.63803H5.15151V2.57743ZM15.9697 19.6804C15.9697 20.2471 15.403 20.6077 14.8364 20.6077H2.16365C1.59697 20.6077 1.0303 20.2471 1.0303 19.6804V4.92137C1.08286 4.33152 1.57153 3.87613 2.16365 3.86533H4.12121V5.17897C4.14843 5.46758 4.39839 5.68347 4.68788 5.66838H12.2863C12.5812 5.6845 12.839 5.47157 12.8787 5.17897V3.86528H14.8363C15.4284 3.87613 15.9171 4.33147 15.9696 4.92132V19.6804H15.9697Z" fill="black"/>
                                         <path d="M6.51661 11.5153C6.3234 11.3117 6.00265 11.3002 5.79538 11.4896L4.14689 13.0608L3.45144 12.3396C3.25823 12.1359 2.93747 12.1245 2.73021 12.3138C2.53069 12.5229 2.53069 12.8518 2.73021 13.0608L3.78625 14.1426C3.87765 14.245 4.00968 14.3016 4.14684 14.2972C4.28271 14.2953 4.41233 14.2397 4.50743 14.1426L6.51652 12.2366C6.71569 12.0539 6.729 11.7442 6.54624 11.5451C6.53688 11.5347 6.52697 11.5248 6.51661 11.5153Z" fill="black"/>
@@ -239,13 +239,13 @@
                                       </svg>
                                       Buy Bid List
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="affiliate">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                                         <path d="M13.226 9.75795C12.0422 9.75795 10.9842 10.306 10.2917 11.1614L7.4102 9.49773C7.49989 9.17568 7.54806 8.83654 7.54806 8.4863C7.54806 8.13605 7.49989 7.79688 7.4102 7.47482L10.1175 5.91175C10.2638 6.12388 10.4312 6.32045 10.6167 6.49822C10.6303 6.51415 10.6459 6.52867 10.6631 6.54167C11.3366 7.16584 12.2374 7.54806 13.226 7.54806C14.2145 7.54806 15.1154 7.1658 15.7889 6.54152C15.806 6.5286 15.8214 6.51415 15.835 6.49833C16.5525 5.81092 17 4.84375 17 3.77397C17 1.69302 15.307 0 13.226 0C11.145 0 9.45194 1.69302 9.45194 3.77401C9.45194 4.35495 9.584 4.90562 9.81949 5.39773L7.20212 6.90889C6.60365 5.61346 5.29222 4.71225 3.77405 4.71225C1.69306 4.71225 0 6.4053 0 8.4863C0 9.55604 0.447468 10.5232 1.16496 11.2106C1.17855 11.2264 1.19397 11.2409 1.21109 11.2538C1.88465 11.8781 2.78549 12.2603 3.77408 12.2603C4.76261 12.2603 5.66345 11.8781 6.33697 11.2539C6.35417 11.2409 6.36965 11.2264 6.38332 11.2105C6.72324 10.8847 7.0024 10.4962 7.2022 10.0637L9.95415 11.6526C9.63484 12.2063 9.45202 12.8482 9.45202 13.532C9.45202 14.6017 9.89941 15.5688 10.6168 16.2562C10.6305 16.2721 10.646 16.2867 10.6632 16.2997C11.3367 16.9238 12.2375 17.306 13.226 17.306C14.2145 17.306 15.1152 16.9238 15.7888 16.2997C15.8061 16.2866 15.8217 16.272 15.8353 16.256C16.5526 15.5686 17 14.6016 17 13.532C17 11.451 15.307 9.75795 13.226 9.75795ZM11.2248 6.24287C11.6674 5.57532 12.4141 5.16911 13.2251 5.16882C13.2254 5.16882 13.2257 5.16885 13.226 5.16885C13.2263 5.16885 13.2265 5.16882 13.2268 5.16882C14.0378 5.16911 14.7845 5.57528 15.2271 6.24283C14.6802 6.68699 13.9838 6.95386 13.226 6.95386C12.4682 6.95386 11.7718 6.68699 11.2248 6.24287ZM12.0919 3.44059C12.0919 2.81527 12.6007 2.30653 13.226 2.30653C13.8513 2.30653 14.36 2.81527 14.36 3.44059C14.36 4.06561 13.8518 4.57417 13.2268 4.57462C13.2265 4.57462 13.2263 4.57462 13.226 4.57462C13.2257 4.57462 13.2254 4.57462 13.2251 4.57462C12.6002 4.57413 12.0919 4.06561 12.0919 3.44059ZM13.226 0.594198C14.9794 0.594198 16.4058 2.02064 16.4058 3.77401C16.4058 4.55282 16.1239 5.26675 15.6574 5.8202C15.317 5.34681 14.8502 4.98788 14.3171 4.77969C14.7056 4.4625 14.9543 3.98009 14.9543 3.44059C14.9543 2.48765 14.179 1.71233 13.226 1.71233C12.2731 1.71233 11.4978 2.48765 11.4978 3.44059C11.4978 3.98009 11.7464 4.4625 12.1349 4.77969C11.6018 4.98788 11.135 5.34681 10.7946 5.82024C10.3281 5.26678 10.0462 4.55286 10.0462 3.77405C10.0461 2.02064 11.4726 0.594198 13.226 0.594198ZM3.77405 5.30645C5.52741 5.30645 6.95386 6.73293 6.95386 8.4863C6.95386 9.2651 6.67195 9.979 6.20547 10.5325C5.8651 10.0591 5.39825 9.70013 4.86511 9.49194C5.25367 9.17475 5.50231 8.69233 5.50231 8.15284C5.50231 7.19989 4.72699 6.42462 3.77405 6.42462C2.8211 6.42462 2.04579 7.19989 2.04579 8.15284C2.04579 8.69233 2.29442 9.17479 2.68299 9.49194C2.14984 9.70013 1.68299 10.0591 1.34263 10.5325C0.876108 9.97903 0.594198 9.26514 0.594198 8.4863C0.594198 6.73293 2.02068 5.30645 3.77405 5.30645ZM2.63998 8.1528C2.63998 7.52748 3.14873 7.01878 3.77405 7.01878C4.39937 7.01878 4.90811 7.52748 4.90811 8.1528C4.90811 8.77812 4.39937 9.28687 3.77405 9.28687C3.14873 9.28687 2.63998 8.77812 2.63998 8.1528ZM1.7729 10.9551C2.21565 10.2873 2.96267 9.88106 3.77405 9.88106C4.58542 9.88106 5.33244 10.2873 5.77519 10.9551C5.22827 11.3992 4.53187 11.6661 3.77405 11.6661C3.01622 11.6661 2.31982 11.3992 1.7729 10.9551ZM11.2248 16.0008C11.6674 15.3333 12.4141 14.9271 13.2251 14.9268C13.2254 14.9268 13.2257 14.9268 13.226 14.9268C13.2263 14.9268 13.2265 14.9268 13.2268 14.9268C14.0378 14.9271 14.7845 15.3332 15.2271 16.0008C14.6802 16.4449 13.9838 16.7118 13.226 16.7118C12.4682 16.7118 11.7718 16.4449 11.2248 16.0008ZM12.0919 13.1985C12.0919 12.5732 12.6007 12.0644 13.226 12.0644C13.8513 12.0644 14.36 12.5732 14.36 13.1985C14.36 13.8235 13.8518 14.3321 13.2268 14.3325C13.2265 14.3325 13.2263 14.3325 13.226 14.3325C13.2257 14.3325 13.2254 14.3325 13.2251 14.3325C12.6002 14.3321 12.0919 13.8236 12.0919 13.1985ZM15.6574 15.5782C15.317 15.1048 14.8501 14.7458 14.317 14.5376C14.7056 14.2204 14.9542 13.738 14.9542 13.1985C14.9542 12.2456 14.1789 11.4702 13.226 11.4702C12.273 11.4702 11.4977 12.2456 11.4977 13.1985C11.4977 13.738 11.7464 14.2204 12.1349 14.5376C11.6018 14.7458 11.1349 15.1047 10.7946 15.5782C10.328 15.0247 10.0461 14.3108 10.0461 13.532C10.0461 11.7786 11.4726 10.3522 13.226 10.3522C14.9794 10.3522 16.4058 11.7786 16.4058 13.532C16.4058 14.3108 16.1239 15.0247 15.6574 15.5782Z" fill="black"/>
                                       </svg>
                                       Affiliate
                                 </button>
-                                <button class="account__select-btn">
+                                <button class="account__select-btn" id="ideas-feedback">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
                                         <path d="M16.8755 1.82447L15.1754 0.12447C15.0096 -0.0413512 14.7407 -0.0415591 14.5748 0.124262C14.5748 0.124366 14.5747 0.12447 14.5744 0.12447L9.47454 5.22458C9.3948 5.30422 9.3501 5.41223 9.3501 5.52493V7.22504C9.3501 7.45968 9.54035 7.64993 9.77499 7.64993H11.4751C11.5878 7.64993 11.6958 7.60523 11.7754 7.52549L16.8755 2.42548C17.0414 2.25966 17.0415 1.99071 16.8758 1.82478C16.8757 1.82478 16.8757 1.82458 16.8755 1.82447ZM11.2991 6.80004H10.2V5.70104L14.875 1.02604L15.974 2.12503L11.2991 6.80004Z" fill="black"/>
                                         <path d="M15.7249 5.09997C15.4903 5.09997 15.3 5.29023 15.3 5.52487V11.4749C15.2993 12.1787 14.7289 12.7492 14.025 12.75H9.77501C9.68301 12.7498 9.5935 12.7796 9.51999 12.8349L6.80001 14.875V13.175C6.80001 12.9402 6.60976 12.75 6.37501 12.75H2.125C1.42117 12.7492 0.850729 12.1787 0.850105 11.475V3.82487C0.850833 3.12114 1.42117 2.5507 2.125 2.54997H9.77501C10.0098 2.54997 10.2 2.35972 10.2 2.12497C10.2 1.89033 10.0098 1.70007 9.77501 1.70007H2.125C0.951885 1.70122 0.00114359 2.65196 0 3.82487V11.475C0.00114359 12.648 0.951885 13.5987 2.125 13.6H5.95001V15.725C5.95001 15.9596 6.14026 16.1499 6.37501 16.1499C6.46702 16.1499 6.55643 16.1201 6.63003 16.0649L9.91713 13.5999H14.025C15.1981 13.5987 16.1488 12.648 16.15 11.4749V5.52498C16.15 5.29023 15.9597 5.09997 15.7249 5.09997Z" fill="black"/>
@@ -542,7 +542,408 @@
                                 <div class="account__content-wallet--content">
                                     <h3>Affiliate <br>Balance</h3>
                                     <p>0.00 USD</p>
-                                    <button>Withdraw</button>
+                                    <button class="account__content-wallet--btn">Withdraw</button>
+                                </div>
+                            </div>
+
+                            <div class="account__content-result account__content-table" data-account="my-bits">
+                                <div class="table-content">
+                                    <table>
+                                        <thead>
+                                          <tr>
+                                            <th>
+                                                <input type="checkbox">
+                                                <span></span>
+                                            </th>
+                                            <th>Auction ID</th>
+                                            <th>Item Description</th>
+                                            <th>Item Unlocked Price</th>
+                                            <th>Time</th>
+                                            <th>Bids Used</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>
+                                                <input type="checkbox" class="row-checkbox">
+                                                <span></span>
+                                            </td>
+                                            <td>00596</td>
+                                            <td>Description</td>
+                                            <td>$202.87</td>
+                                            <td>Sunday 10:30 PM</td>
+                                            <td>500</td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                                <input type="checkbox" class="row-checkbox">
+                                                <span></span>
+                                            </td>
+                                            <td>00596</td>
+                                            <td>Description</td>
+                                            <td>$202.87</td>
+                                            <td>Sunday 10:30 PM</td>
+                                            <td>500</td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="account__content-buttons">
+                                    <a href="#">01</a>
+                                    <a class="active" href="#">02</a>
+                                    <a href="#">03</a>
+                                    <a href="#">...</a>
+                                    <a href="#">04</a>
+                                    <a href="#">05</a>
+                                    <a href="#">06</a>
+                                </div>
+                            </div>
+
+                            <div class="account__content-result account__content-table" data-account="auction-won">
+                                <table>
+                                    <thead>
+                                      <tr>
+                                        <th>
+                                            <input type="checkbox">
+                                            <span></span>
+                                        </th>
+                                        <th>Auction ID</th>
+                                        <th>Click to Reveal Details</th>
+                                        <th>Time</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                            <input type="checkbox" class="row-checkbox">
+                                            <span></span>
+                                        </td>
+                                        <td>00596</td>
+                                        <td>Details</td>
+                                        <td>Sunday 10:30 PM</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            <input type="checkbox" class="row-checkbox">
+                                            <span></span>
+                                        </td>
+                                        <td>00596</td>
+                                        <td>Details</td>
+                                        <td>Sunday 10:30 PM</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="account__content-buttons">
+                                    <a href="#">01</a>
+                                    <a class="active" href="#">02</a>
+                                    <a href="#">03</a>
+                                    <a href="#">...</a>
+                                    <a href="#">04</a>
+                                    <a href="#">05</a>
+                                    <a href="#">06</a>
+                                </div>
+                            </div>
+
+                            <div class="account__content-result account__content-table" data-account="watched-auctions">
+                                <table>
+                                    <thead>
+                                      <tr>
+                                        <th>
+                                            <input type="checkbox">
+                                            <span></span>
+                                        </th>
+                                        <th>Auction ID</th>
+                                        <th>Item Description </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>
+                                            <input type="checkbox" class="row-checkbox">
+                                            <span></span>
+                                        </td>
+                                        <td>00596</td>
+                                        <td>Description</td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                            <input type="checkbox" class="row-checkbox">
+                                            <span></span>
+                                        </td>
+                                        <td>00596</td>
+                                        <td>Description</td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="account__content-buttons">
+                                    <a href="#">01</a>
+                                    <a class="active" href="#">02</a>
+                                    <a href="#">03</a>
+                                    <a href="#">...</a>
+                                    <a href="#">04</a>
+                                    <a href="#">05</a>
+                                    <a href="#">06</a>
+                                </div>
+                            </div>
+
+
+                            <div class="account__content-result account__content-bits" data-account="buy-bids">
+                                <h2 class="account__bits-title">Buy Bid Packets</h2>
+                                <p class="account__bits-descr">To buy a bid package, please make your selection from the bid packages below</p>
+                                <div class="account__bits-block">
+                                    <div class="account__bits-item" data-color="#01DE8E">
+                                        <div class="account__bits-top">
+                                            <p class="account__bits-num">3</p>
+                                            <p class="account__bits-name">Bids</p>
+                                        </div>
+                                        <a class="account__bits-price" href="#">$10.00</a>
+                                    </div>
+                                    <div class="account__bits-item" data-color="#F56601">
+                                        <div class="account__bits-top">
+                                            <p class="account__bits-num">6</p>
+                                            <p class="account__bits-name">Bids</p>
+                                        </div>
+                                        <a class="account__bits-price" href="#">$18.00</a>
+                                    </div>
+                                    <div class="account__bits-item" data-color="#63767C">
+                                        <div class="account__bits-top">
+                                            <p class="account__bits-num">13</p>
+                                            <p class="account__bits-name">Bids</p>
+                                        </div>
+                                        <a class="account__bits-price" href="#">$34.00</a>
+                                    </div>
+                                    <div class="account__bits-item" data-color="#077796">
+                                        <div class="account__bits-top">
+                                            <p class="account__bits-num">27</p>
+                                            <p class="account__bits-name">Bids</p>
+                                        </div>
+                                        <a class="account__bits-price" href="#">$68.00</a>
+                                    </div>
+                                    <div class="account__bits-item" data-color="#981ED0">
+                                        <div class="account__bits-top">
+                                            <p class="account__bits-num">55</p>
+                                            <p class="account__bits-name">Bids</p>
+                                        </div>
+                                        <a class="account__bits-price" href="#">$128.00</a>
+                                    </div>
+                                    <div class="account__bits-item" data-color="#DE9101">
+                                        <div class="account__bits-top">
+                                            <p class="account__bits-num">100</p>
+                                            <p class="account__bits-name">Bids</p>
+                                        </div>
+                                        <a class="account__bits-price" href="#">$250.00</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="account__content-result account__content-affiliate" data-account="affiliate">
+                                <div class="account__affialte-content">
+                                    <h2 class="account__affialte-title">Welcome to the Referral program.</h2>
+                                    <p class="account__affialte-descr">Have friends sign up using your unique link and earn rewards.</p>
+                                </div>
+
+                                <div class="account__affialte-content">
+                                    <h2 class="account__affialte-title">Share your unique referral link</h2>
+                                    <form class="account__affialte-form" action="#">
+                                        <input type="text" required>
+                                        <button class="btn" type="submit">Submit</button>
+                                    </form>
+                                </div>
+
+                                <div class="account__affialte-content">
+                                    <div class="account__affialte-select">
+                                        <span class="active" id="your-affiliate-network">Your Affiliate Network</span>
+                                        <span id="my-team">My Team</span>
+                                        <span>Withdraw</span>
+                                    </div>
+                                    <div class="account__affialte-result active" data-affiliate="your-affiliate-network">
+                                        <h2>Let's start to build your Network</h2>
+                                        <p>Affiliate Network or also called Invitation Marketing, allows you to earn money in a simple way. You do not sell anything, but recommend us and our service. If your recommendation generates sales, you will receive commissions as a thank you. Personalized links are available here for this purpose. We wish you good luck.</p>
+                                        <div class="account__affialte-block">
+                                            <div class="account__affialte-item">
+                                                <h3 class="account__affialte-name">1. Level:  0  Partner</h3>
+                                                <p class="account__affialte-about">Commission 15% Fiat/YEM</p>
+                                                <div class="account__affialte-buttons">
+                                                    <button class="btn">Active</button>
+                                                    <button class="btn">Inactive</button>
+                                                </div>
+                                            </div>
+                                            <div class="account__affialte-item">
+                                                <h3 class="account__affialte-name">2. Level:  0  Partner</h3>
+                                                <p class="account__affialte-about">Commission 10% Fiat/YEM</p>
+                                                <div class="account__affialte-buttons">
+                                                    <button class="btn">Active</button>
+                                                    <button class="btn">Inactive</button>
+                                                </div>
+                                            </div>
+                                            <div class="account__affialte-item">
+                                                <h3 class="account__affialte-name">3. Level:  0  Partner</h3>
+                                                <p class="account__affialte-about">Commission 5% Fiat/YEM</p>
+                                                <div class="account__affialte-buttons">
+                                                    <button class="btn">Active</button>
+                                                    <button class="btn">Inactive</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="account__affialte-result" data-affiliate="my-team">
+                                        <h2>Affiliate List</h2>
+                                        <div class="account__affialte-box">
+                                            <div class="account__affialte-info">
+                                                <h3>Total Affiliates</h3>
+                                                <p>80</p>
+                                            </div>
+                                            <div class="account__affialte-info">
+                                                <h3>Active Affiliates</h3>
+                                                <p>50</p>
+                                            </div>
+                                            <div class="account__affialte-info">
+                                                <h3>Total Amount</h3>
+                                                <p>$150.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="account__content-table">
+                                            <table>
+                                                <thead>
+                                                  <tr>
+                                                    <th>Username</th>
+                                                    <th>Level</th>
+                                                    <th>Registration Date</th>
+                                                    <th>Country</th>
+                                                    <th>Email</th>
+                                                    <th>Amount</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>00596</td>
+                                                    <td>Description</td>
+                                                    <td>$202.87</td>
+                                                    <td>USA</td>
+                                                    <td>example@gmail.com</td>
+                                                    <td>500</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>00596</td>
+                                                    <td>Description</td>
+                                                    <td>$202.87</td>
+                                                    <td>USA</td>
+                                                    <td>example@gmail.com</td>
+                                                    <td>500</td>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="account__content-result account__content-ideas" data-account="ideas-feedback">
+                                <h2 class="account__ideas-title">Ideas & Feedback</h2>
+                                <form class="account__ideas-form" action="#">
+                                    <div class="account__ideas-box">
+                                        <label for="your-name">Your Name</label>
+                                        <input type="text" name="name" id="your-name" placeholder="Your Name">
+                                    </div>
+                                    <div class="account__ideas-box">
+                                        <label for="your-email">Your Email</label>
+                                        <input type="email" name="email" id="your-email" placeholder="Your Email	">
+                                    </div>
+                                    <div class="account__ideas-box">
+                                        <label for="message">Ideas and Suggestions</label>
+                                        <div class="account__ideas-block">
+                                            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                                            <button class="btn" type="submit">Submit</button>
+                                        </div>                                        
+                                    </div>
+                                </form>                                
+                            </div>
+
+                            <div class="account__content-result account__content-membership" data-account="buy-membership">
+                                <h2>Buy Membership</h2>
+                                <p>To buy a membership, please make your selection from the membership packages below</p>
+                                <div class="account__membership-block">
+                                    <div class="account__membership-item">
+                                        <div class="account__membership-image">
+                                            <img src="img/membership/1.png" alt="">
+                                        </div>
+                                        <div class="account__membership-content">
+                                            <div class="account__membership-message">
+                                                <h2>Free Plan</h2>
+                                                <p>Access: Free Tier members can access basic-value items and New User Auctions.</p>
+                                            </div>
+                                            <div class="account__membership-message">
+                                                <h2>Features:</h2>
+                                                <ul>
+                                                    <li>One free click to use exclusively on New User Auctions.</li>
+                                                    <li>Users pay per click to reveal prices.</li>
+                                                    <li>Basic customer support.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account__membership-item">
+                                        <div class="account__membership-image">
+                                            <img src="img/membership/2.png" alt="">
+                                        </div>
+                                        <div class="account__membership-content">
+                                            <div class="account__membership-message">
+                                                <h2>Free Plan</h2>
+                                                <p>Access: Free Tier members can access basic-value items and New User Auctions.</p>
+                                            </div>
+                                            <div class="account__membership-message">
+                                                <h2>Features:</h2>
+                                                <ul>
+                                                    <li>One free click to use exclusively on New User Auctions.</li>
+                                                    <li>Users pay per click to reveal prices.</li>
+                                                    <li>Basic customer support.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account__membership-item">
+                                        <div class="account__membership-image">
+                                            <img src="img/membership/3.png" alt="">
+                                        </div>
+                                        <div class="account__membership-content">
+                                            <div class="account__membership-message">
+                                                <h2>Free Plan</h2>
+                                                <p>Access: Free Tier members can access basic-value items and New User Auctions.</p>
+                                            </div>
+                                            <div class="account__membership-message">
+                                                <h2>Features:</h2>
+                                                <ul>
+                                                    <li>One free click to use exclusively on New User Auctions.</li>
+                                                    <li>Users pay per click to reveal prices.</li>
+                                                    <li>Basic customer support.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="account__membership-item">
+                                        <div class="account__membership-image">
+                                            <img src="img/membership/4.png" alt="">
+                                        </div>
+                                        <div class="account__membership-content">
+                                            <div class="account__membership-message">
+                                                <h2>Free Plan</h2>
+                                                <p>Access: Free Tier members can access basic-value items and New User Auctions.</p>
+                                            </div>
+                                            <div class="account__membership-message">
+                                                <h2>Features:</h2>
+                                                <ul>
+                                                    <li>One free click to use exclusively on New User Auctions.</li>
+                                                    <li>Users pay per click to reveal prices.</li>
+                                                    <li>Basic customer support.</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             

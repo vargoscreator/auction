@@ -47,6 +47,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-
-
+  const bitsItems = document.querySelectorAll('.account__bits-item');
+  bitsItems.forEach(item => {
+      const color = item.getAttribute('data-color');
+      const bitsTop = item.querySelector('.account__bits-top');
+      const bitsPrice = item.querySelector('.account__bits-price');
+      
+      if (color) {
+        bitsTop.style.border = `5px solid ${color}`;
+        bitsPrice.style = `background: ${color}`;
+      }
+  });
 });
+
+const affiliateLinks = document.querySelectorAll('.account__affialte-select span');
+const affiliateResults = document.querySelectorAll('.account__affialte-result');
+affiliateLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        affiliateLinks.forEach(link => link.classList.remove('active'));
+        affiliateResults.forEach(result => result.classList.remove('active'));
+        link.classList.add('active');
+        const targetAffiliate = document.querySelector(`.account__affialte-result[data-affiliate="${link.id}"]`);
+        if (targetAffiliate) {
+            targetAffiliate.classList.add('active');
+        }
+    });
+});
+
