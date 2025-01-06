@@ -73,4 +73,3 @@ affiliateLinks.forEach(link => {
         }
     });
 });
-
